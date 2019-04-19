@@ -21,7 +21,7 @@ library(tensorflow)
     DF[is.na(DF)] <- 0
     return(DF)
   }
-  supervised = lags(diffed, k)
+  supervised = lags(diffed, 1)
   
   
   ## split into train and test sets
