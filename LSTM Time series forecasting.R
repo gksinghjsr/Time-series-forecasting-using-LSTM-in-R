@@ -4,7 +4,8 @@ library(tensorflow)
 
 
   
-  Series = df$Value  # your time series 
+ # Series = df$Value  # your time series 
+   Series = rnorm(500)  # your time series 
   
   # transform data to stationarity
   diffed = diff(Series, differences = 1)
