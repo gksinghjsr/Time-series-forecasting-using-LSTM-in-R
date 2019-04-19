@@ -99,7 +99,7 @@ library(tensorflow)
   
   
   summary(model)
-  
+  Epochs = 50 
   nb_epoch = Epochs   
   for(i in 1:nb_epoch ){
     model %>% fit(x_train, y_train, epochs=1, batch_size=batch_size, verbose=1, shuffle=FALSE)
